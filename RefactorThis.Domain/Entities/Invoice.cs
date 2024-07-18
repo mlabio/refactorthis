@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace RefactorThis.Persistence
+namespace RefactorThis.Domain.Entities
 {
 	public class Invoice
 	{
@@ -12,7 +12,7 @@ namespace RefactorThis.Persistence
 
 		public void Save( )
 		{
-			_repository.SaveInvoice( this );
+			_repository.SaveInvoice(this);
 		}
 
 		public decimal Amount { get; set; }
